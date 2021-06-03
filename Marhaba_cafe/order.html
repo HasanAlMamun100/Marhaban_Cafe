@@ -1,0 +1,195 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>payment method</title>
+
+</head>
+<style>
+ .mid{
+            background-image:url(MainBack.jpg);
+	    background-size:cover;
+            background-position:center;
+			background-attachment: fixed;
+	    width:auto;
+            height:auto;
+
+        }
+
+
+  table{
+   background: rgb(96, 203, 220);
+   margin:auto;
+
+  }
+
+
+ </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat&family=Roboto&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="menuStyle.css">
+  </head>
+  <body>
+    <header>
+        <div class="row">
+            <div class="col-lg-4 col-md-12">
+               <div class="logo-div">
+                    <a href="#">
+                        <img src="images/MainLogo.png" alt="MainLogo" width="60" height="60">
+                    </a>
+               </div>
+
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <nav class="topnav" id="myTopnav">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about us.html">About us</a></li>
+                        <li><a href="menu.html">Food Menu</a></li>
+                        <li><a href="#">Order</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                          <li><a href="signup.html">Sign-Up</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<body class="mid">
+                             <!-- end of navigation bar -->
+
+
+
+
+<!--NAVIGATION BAR-->
+<div style="background-color: white;">
+
+</div>
+</nav>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<div></div>
+
+
+
+      <script>
+    document.write("<h2 align='center' style='background: white'><font size='14' color='black'>Make your order</font></h2>");
+	</script>
+ <!--PAYMENT TABLE-->
+ <table border="1">
+
+	 <tr>
+ 	 <th>Name</th>
+ 	 <th><select id="name" onchange="total()">
+ 	<option>Mandi rice</option>
+ 	<option>Kubsa rice</option>
+ 	<option>Kunafa</option>
+ 	<option>Shawarma</option>
+	<option>Syahi adni</option>
+	<option>Barbican</option>
+ 	 </select></th>
+ 	</tr>
+
+   <tr>
+    <th>Price (RM)</th>
+    <th><input type="number"  id="price" onchange="total()" readonly></th>
+   </tr>
+
+   <tr>
+    <th>Quantity</th>
+    <th><input type="number" id="quantity"  value="1" onchange="total()" min="1"></th>
+   </tr>
+
+
+
+   <tr>
+    <th>Total price (RM)</th>
+    <th><input type="text" style="background: yellow" id="total" disabled></th>
+   </tr>
+
+
+      <tr>
+       <th>Payment Method</th>
+       <th>	<select id="payment_method" onchange="total()">
+         <option>Cash on Delivery</option>
+       	<option>Online Payment</option>
+      </th>
+
+      </tr>
+      <tr>
+          <th><input type="button" style="background: white"  onclick="window.print()" value="Make Payment"></th>
+      </tr>
+
+
+  </table>
+  <br>
+  <table width="300" height="201px" border="1" >
+  <th><label align="landscape"  id="print" ></label></th>
+  </table>
+
+
+
+		<marquee scrolldelay="100" direction="left" bgcolor="coral"> > THANKS FOR BUYING < </marquee>
+
+
+  <script type="text/javascript">
+
+//   <!--FUNCTION TOTAL-->
+
+  function total() {
+
+   var name = $('#name').val();
+   var price =  parseInt(document.getElementById('price').value);
+   var quantity =  parseInt(document.getElementById('quantity').value);
+
+	 if($('#name').val() == "Mandi rice")
+		{
+			price=18;
+			document.getElementById('price').value = price;
+		}
+		else  if($('#name').val() == "Kubsa rice") {
+			price = 18;
+			document.getElementById('price').value = price;
+		}
+		else  if($('#name').val() == "Kunafa") {
+			price = 10;
+			document.getElementById('price').value = price;
+		}
+		else  if($('#name').val() == "Shawarma") {
+			price = 12;
+			document.getElementById('price').value = price;
+		}
+		else  if($('#name').val() == "Syahi adni") {
+			price = 8;
+			document.getElementById('price').value = price;
+		}
+		else  if($('#name').val() == "Barbican") {
+			price = 6;
+			document.getElementById('price').value = price;
+		}
+
+
+   var total_price = price * quantity;
+    document.getElementById('total').value = total_price;
+    var payment_method = document.getElementById("payment_method").value;
+
+   var print = 	      "Name    : "+name+"</br>"+
+                      "Price   : "+price+"</br>"+
+                      "Quantity  : "+quantity+"</br>"+
+                      "Total price  : "+total_price+"</br>" +
+                      "Payment Method  : "+payment_method+"</br>"
+    document.getElementById("print").innerHTML=print;
+  }
+
+  </script>
+ </div>
+</body>
+</html>

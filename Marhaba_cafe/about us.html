@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+  <html lang="" dir="ltr">
+     <head>
+
+         <meta charset="utf-8">
+         <title>ABOUT US</title>
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+         crossorigin="anonymous" />
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+         <link rel="stylesheet" href="aboutStyle.css">
+    </head>
+    <style >
+
+  /* position-section starts here  */
+
+    .card-image {
+        text-align: center;
+    }
+
+    .card-image img {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        margin-top:20px;
+
+    }
+    .person-desc {
+        background: rgb(96, 203, 220);
+    }
+    .person-name {
+        background: Yellow;
+        color: black;
+        padding: 10px;
+    }
+    .person-desc>p {
+        font-size: 0.8rem;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    /* postition-section ends here  */
+
+
+    .fotorama {
+       padding-top: 30px;
+       size: 100%;
+       padding-left : 35%;
+        }
+
+    .text {
+       font-family: papyrus;
+       font-weight: bold;
+       font-size: 20px;
+       position: sticky;
+       bottom: 50%;
+       width: 50%;
+       text-align: center;
+       margin: 100px;
+       background-color: #ffffff;
+
+        }
+
+    #content {
+       font-family: papyrus;
+       border: 5px solid black;
+       padding: 40px;
+       text-align: center;
+       margin: 10px;
+       width: auto;
+       background-color: rgba(255, 255, 0, 0.884);
+       margin-bottom:20px;
+        }
+    </style>
+
+   <body style="background-color: white; width:100%;">
+
+     <!-- header starts  -->
+     <header>
+         <div class="row">
+             <div class="col-lg-4 col-md-12">
+                <div class="logo-div">
+                     <a href="#">
+                         <img src="images/MainLogo.png" alt="MainLogo" width="60" height="60">
+                         <!-- <h2>Dracula</h2> -->
+                     </a>
+                </div>
+
+             </div>
+             <div class="col-lg-8 col-md-12">
+                 <nav class="topnav" id="myTopnav">
+                     <ul>
+                         <li><a href="home.html">Home</a></li>
+                         <li><a href="#about-us">About us</a></li>
+                         <li><a href="menu.html">Food Menu</a></li>
+                         <li><a href="order.html">Order</a></li>
+                         <li><a href="feedback.html">Feedback</a></li>
+                           <li><a href="signup.html">Sign-up</a></li>
+
+                     </ul>
+                 </nav>
+             </div>
+         </div>
+
+         <h1 >ABOUT US</h1>
+     </header>
+     <!-- header ends  -->
+
+   <!-- position starts  -->
+     <div class="row">
+         <div class="col-lg-3 col-md-6 col-sm-12">
+             <div class="postition">
+                 <div class="card-image">
+                     <img src="images/M.jpg" alt="person1">
+                     <div class="person-desc">
+                         <h3 class="person-name">DIRECTOR</h3>
+                         <p>HASAN AL MAMUN</p>
+                         <p>1820613</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+             <div class="position">
+                 <div class="card-image">
+                     <img src="images/A.jpeg" alt="person2">
+                     <div class="person-desc">
+                         <h3 class="person-name">MANAGER</h3>
+                         <p>BAWAZIR ABDURRAHMAN ALI</p>
+                         <p>1828549</p>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+             <div class="position">
+                 <div class="card-image">
+                     <img src="images/K.jpeg" alt="person3">
+                     <div class="person-desc">
+                         <h3 class="person-name">SALES OFFICER</h3>
+                         <p>NURHARITH AKMA BINTI HARISA</p>
+                         <p>1910110</p>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-6 col-sm-12">
+             <div class="position">
+                 <div class="card-image">
+                     <img src="images/P.jpeg" alt="food1">
+                     <div class="person-desc">
+                         <h3 class="person-name">FINANCIAL OFFICER</h3>
+                         <p>NUR AFIQAH BT MOHD ROSLI</p>
+                         <p>1910100</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+  <!-- position starts  -->
+
+     <!--- Slideshow starts here -->
+   <div class="fotorama" data-autoplay ="true" style="" >
+
+        <div class="P1">
+            <img src="images/P1.jpg" alt="P1" style=" width:100%;">
+            <div class="text">Marhaban Cafe</div>
+        </div>
+
+       <div class="P2">
+            <img src="images/P2.jpg" alt="P2" style="width:100%">
+            <div class="text">Cook with love</div>
+       </div>
+
+       <div class="P3">
+           <img src="images/P3.jpg" alt="P3" style="width:100%">
+           <div class="text">A place that you call yours </div>
+       </div>
+
+   </div>
+       <!--- Slideshow starts here -->
+
+
+        <!--- content -->
+      <p id="content" >
+
+        We launched our restaurant nearly a decade ago and we found excitement of starting business with besftfriends!
+        eventhough that was the toughest road we ever walked but we were able to went through together. All of us have passion in cooking and doing business.
+        We chose international cuisine as our main menu of our restaurant is because one of us expert in cooking international food.
+
+        And at Marhaban Cafe our desire is to contribute to the community that has so loyally supported us.
+        Our vision is to create a dining experience that foremost, feels like a place that you decide to call yours,
+        and that you choose to share with your family and friends. We feel that we’re living within that vision because
+        in the Spring of 2011 we had to create a larger space for our growing “neighbourhood” of much appreciated repeat guests.
+        We’re incredibly grateful that when we built our new home and moved to a new location, our “neighbourhood” followed us. Thank you!
+
+      </p>
+
+      <!-- contact starts here  -->
+      <section id="contact-section">
+          <div class="row">
+              <div class="col-lg-8">
+                  <iframe class="map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5859791429198!2d101.70093481475755!3d3.202898897667997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc496950c96dfb%3A0x7950ef39239ee438!2sKL%20Traders%20Square!5e0!3m2!1sen!2smy!4v1618931799499!5m2!1sen!2smy"
+                      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                      tabindex="0"></iframe>
+              </div>
+              <div class="col-lg-4">
+                  <div class="contact-details">
+                      <h3>Contact Details</h3> <br>
+
+                      <div>
+                          <h5>Marhaban Cafe'</h5>
+                          <address>
+                            KL Traders Square, No.99, Jalan Gombak, Kampung Kuantan,
+                               53000 Kuala Lumpur,
+                          </address> <br>
+                      </div>
+
+                      <div>
+                          <h5>Phone : </h5>
+                          <p>+60169520854</p><br>
+                      </div>
+                      <div>
+                          <h5>Business hours :</h5>
+                          <p>
+                            Every day 12PM -10PM  <br>
+
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- contact ends here  -->
+
+        <!-- footer starts here  -->
+  </main>
+
+  <footer >
+      <div class="row">
+          <div class="col-lg-6">
+              <p>&copy; All right reserved by Marhaban Cafe</p>
+          </div>
+          <div class="col-lg-6">
+              <div class="social-menus">
+                  <a href="#"><i class="icon-style fas fa-arrow-up"></i></a>
+                  <a href="#"><i class="icon-style fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="icon-style  fab fa-youtube"></i></a>
+                  <a href="#"><i class="icon-style  fab fa-twitter"></i></a>
+                  <a href="#"><i class="icon-style  fab fa-instagram"></i></a>
+
+              </div>
+          </div>
+      </div>
+  </footer>
+
+</div>
+<!-- footer ends here  -->
+
+
+</body>
+</html>

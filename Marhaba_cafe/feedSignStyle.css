@@ -1,0 +1,443 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.row {
+    width: 100%;
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+/* header section starts here  */
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left:0%;
+    width:100%;
+    height:10%;
+    background: #24a19c;
+    text-align: center;
+    background: rgb(96, 203, 220);
+    z-index: 1;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+nav ul li {
+    display: block;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+    padding: 0 20px;
+    transition: .4s;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+    border-radius: 10px;
+    background: rgba(255, 255, 0, 0.884);
+    color: white;
+}
+
+.topnav a {
+    display: none;
+}
+
+.topnav .icon {
+    display: block;
+}
+
+.topnav.responsive a {
+    display: block;
+}
+/* header ends here  */
+
+/*form star here*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background: #ffe885;
+  padding: 0 10px;
+}
+
+.header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left:0%;
+  padding: 80px;
+  width:100%;
+  text-align: center;
+  color: white;
+  background-color: rgb(96, 203, 220);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+/*padding: 50px;
+width:100%;
+text-align: center;
+color: white;
+background-color: rgb(96, 203, 220);
+font-size: 30px;
+font-weight: bolder;*/
+
+.box{
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  margin-top: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+input[type=radio] {
+ display: inline-block;
+ margin: 5px;
+}
+/* Full-width feedback input fields */
+input[type=textarea], input[type=feedback] {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px ;
+  border-color: grey;
+  background: #fff;
+}
+/* Half-width input fields */
+input[type=text], input[type=feedback] {
+  width: 267.5px;
+  height: 30px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px ;
+  border-color: grey;
+  background: #fff;
+}
+input[type=text1], input[type=feedback] {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px ;
+  border-color: grey;
+  background: #fff;
+}
+/* Full-width email input fields */
+input[type=email], input[type=email] {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px ;
+  border-color: grey;
+  background: #fff;
+}
+
+/* Set a style for select section */
+.custom-select {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border-style: solid;
+  border-width: 2px ;
+  border-color: grey;
+  background: #ffffff;
+}
+.box span {
+color: red;
+}
+
+/* Set a style for the submit button */
+.submitbtn {
+  background-color: rgb(96, 203, 220);
+  color: white;
+  font-weight: bolder;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  align-items: center;
+}
+
+.box.registerbtn:hover {
+  opacity:1;
+}
+
+/* contact section starts here  */
+#contact-section {
+    padding: 1%;
+    background: rgb(96, 203, 220);;
+}
+.contact-details {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.map {
+    width: 100%;
+    height: 250px;
+}
+.contact-details p,
+address {
+    font-size: 0.8rem;
+}
+/* contact section ends here  */
+
+/* footer starts here  */
+footer {
+    background: #060930;
+    padding: 1%;
+    color: white;
+}
+footer p {
+    font-size: 0.8rem;
+    line-height: 32px;
+    text-align: center;
+}
+.social-menus{
+    text-align: center;
+}
+.icon-style {
+    color: white;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0 10px;
+    transition: .4s;
+    text-align: center;
+}
+.icon-style:hover{
+    background-color: rgb(164, 23, 23);
+
+}
+
+/* footer section ends here  */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+
+    .topnav .icon {
+        display: none;
+    }
+
+    .topnav a {
+        display: inline-block;
+    }
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+    /* Large screen column width */
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+        background: black;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    /* header section starts here  */
+    .logo-div {
+        text-align: left;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        display: inline-block;
+
+    }
+    nav ul li a:hover {
+        border-radius: 0;
+        background-color: transparent;
+        transform: scale(1.2);
+        text-decoration: underline;
+        text-decoration-color: Yellow;
+    }
+    /* header ends here  */
+
+    /* banner starts here  */
+    #banner-section {
+       position: relative;
+       height: 100vh;
+       display:flex;
+    }
+
+    .banner-contents {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+    /* transform: translate(-50%, -50%); */
+    }
+    .banner-contents p {
+        width: 500px;
+        font-size: 2rem;
+    }
+
+    /* banner ends here */
+
+    /* footer starts here  */
+    footer p {
+        text-align: left;
+        background: black;
+    }
+    footer{
+      background-color: black;
+
+    }
+    .social-menus{
+        text-align: right;
+    }
+    /* footer ends here  */
+}
