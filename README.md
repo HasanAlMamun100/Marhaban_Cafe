@@ -55,18 +55,6 @@ This page contains the registration form for customers to sign up.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 3. Group Contribution
 
 Name & Matric No	 Contributions
@@ -104,78 +92,3 @@ Food photo	Mamun	https://www.google.com/search?q=arabian+kabsa+chicken&tbm=isch&
 5. References
 
 1.Form validation. Retrieved 25 May from https://www.w3schools.com/js/js_validation.asp 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
